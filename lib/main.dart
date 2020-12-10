@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
   var form = _formKey.currentState;
   if (form.validate()) {
     form.save();
-      await _dbHelper.insertContact(_user);
+      await _dbHelper.insertUser(_user);
       form.reset();
       await _refreshUserList();
   }

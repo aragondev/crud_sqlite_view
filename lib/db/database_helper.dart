@@ -42,7 +42,7 @@ class DatabaseHelper{
   }
 
  //insert user
-  Future<int> insertContact(User user) async {
+  Future<int> insertUser(User user) async {
   Database db = await database;
   return await db.insert(User.tblUser, user.toMap());
   }
