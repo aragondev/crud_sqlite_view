@@ -23,7 +23,7 @@ class DatabaseHelper{
   _initDatabase() async {
     Directory dataDirectory = await getApplicationDocumentsDirectory();
     String dbPath = join(dataDirectory.path, _databaseName);
-    print(dbPath);
+    //print(dbPath);
     return await openDatabase(dbPath,
         version: _databaseVersion, onCreate: _onCreateDB);
   }
